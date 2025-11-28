@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'djongo',
     'corsheaders',
+    'octofit_tracker',
 ]
 
 MIDDLEWARE = [
@@ -85,18 +86,15 @@ DATABASES = {
         'CLIENT': {
             'host': 'localhost',
             'port': 27017,
-            'username': '',
-            'password': '',
-            'authSource': 'admin',
-            'authMechanism': 'SCRAM-SHA-1',
         },
     }
+}
+
 # CORS settings
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_HEADERS = ['*']
 CORS_ALLOW_METHODS = ['*']
-}
 
 
 # Password validation
